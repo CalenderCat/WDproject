@@ -1,6 +1,6 @@
-<!--The first page where the login process begins-->
 <?php 
 include 'header.php';
+include 'connect.php';
 if(count($_POST) > 0) {
     if($_POST['firstname'] == "") {
         $fnameError = "error";
@@ -9,7 +9,8 @@ if(count($_POST) > 0) {
         $lnameError = "error";
     }
     if(!isset($fnameError) && !isset($lnameError)) {
-        $_SESSION['userInfo'] = $_POST; ?>
+        $_SESSION['userInfo'] = $_POST; 
+        $_SESSION['loggedin'] = true; ?>
         <script>window.location.href = "rolelookup.php";</script>
     <?php }
 }
@@ -24,8 +25,8 @@ if(count($_POST) > 0) {
     </head>
     <body>
         <main>
-
-            <form class="input" method="post" action="index.php">
+            <p class="pagehead">Halifax Canoe and Kayak Login</p>
+            <form class="input" method="post" action="login.php">
                 <select name="prefix">
                     <option>Mr.</option>
                     <option>Mrs.</option>

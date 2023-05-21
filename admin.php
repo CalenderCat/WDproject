@@ -16,6 +16,7 @@ $userInfo = $_SESSION['userInfo'];
         <main>
             <h1>Hello <?=$userInfo['firstname']?> <?=$userInfo['lastname']?> (Admin)</h1>
             <a href="newaccount.php">Create new account</a>
+            <a href="booking.php">Add an upcoming adventure to homepage</a>
             <a href="notworking.php">My PC isn't working</a>
         </main>
     </body>

@@ -1,4 +1,3 @@
-<!--The footer page-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,6 +7,7 @@
         <link rel="stylesheet" href="style2.css" type="text/css">
     <footer>
         <p class="footer">Copyright&#169; Halifax Canoe and Kayak 2023</p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="script.js"></script>
 </html>
