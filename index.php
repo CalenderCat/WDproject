@@ -1,7 +1,7 @@
 <?php
     include 'header.php';
     include 'connect.php';
-    $sql = "SELECT heading, tripDate, duration, summary FROM trips";
+    $sql = "SELECT heading, tripDate, duration, summary FROM trips ORDER BY tripDate" ;
 ?>
 <!DOCTYPE html>
 <html lang="en">

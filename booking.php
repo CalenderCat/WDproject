@@ -45,7 +45,7 @@ if(count($_POST) > 0) {
                 <input type="text" class="fields <?=$headingError?>" id="heaing" name="heading"/>
                 <label class ="labels" for="date">Trip date:</label>
                 <input type="date" class="fields <?=$dateError?>" id="date" name="date"/>
-                <label class="labels" for="duration">Trip duration:</label>
+                <label class="labels" for="duration">Trip duration (number of days):</label>
                 <input type="text" class="fields <?=$durationError?>" id="duration" name="duration"/>
                 <label class="labels" for="summary">Trip description:</label>
                 <textarea class="fields <?=$summaryError?>" id="summary" name="summary"></textarea>
